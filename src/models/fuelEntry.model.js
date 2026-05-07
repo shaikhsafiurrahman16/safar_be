@@ -1,0 +1,1 @@
+// Fuel entry model
