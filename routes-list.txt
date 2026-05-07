@@ -1,0 +1,83 @@
+BASE URL: http://localhost:5000
+
+AUTH ROUTES
+Create user / Register: POST http://localhost:5000/auth/register
+Login user: POST http://localhost:5000/auth/login
+Logout user: POST http://localhost:5000/auth/logout
+Refresh auth token: POST http://localhost:5000/auth/refresh-token
+Read current profile: GET http://localhost:5000/auth/profile
+Update current profile: PUT http://localhost:5000/auth/profile
+Change password: PUT http://localhost:5000/auth/change-password
+Request password reset: POST http://localhost:5000/auth/forgot-password
+Reset password: POST http://localhost:5000/auth/reset-password
+
+USER ROUTES
+Read all users (admin): GET http://localhost:5000/users
+Read user by ID: GET http://localhost:5000/users/:id
+Update user by ID (admin): PUT http://localhost:5000/users/:id
+Delete user by ID (admin): DELETE http://localhost:5000/users/:id
+Read user statistics (admin): GET http://localhost:5000/users/stats
+
+VEHICLE ROUTES
+Read all vehicles: GET http://localhost:5000/vehicles
+Read vehicle by ID: GET http://localhost:5000/vehicles/:id
+Create vehicle: POST http://localhost:5000/vehicles
+Update vehicle by ID: PUT http://localhost:5000/vehicles/:id
+Delete vehicle by ID: DELETE http://localhost:5000/vehicles/:id
+Read vehicle type list: GET http://localhost:5000/vehicles/types/list
+Read vehicle statistics: GET http://localhost:5000/vehicles/stats
+
+FUEL ROUTES
+Read all fuel entries: GET http://localhost:5000/fuel
+Read fuel entry by ID: GET http://localhost:5000/fuel/:id
+Create fuel entry: POST http://localhost:5000/fuel
+Update fuel entry by ID: PUT http://localhost:5000/fuel/:id
+Delete fuel entry by ID: DELETE http://localhost:5000/fuel/:id
+Read fuel statistics: GET http://localhost:5000/fuel/stats
+Read fuel trends: GET http://localhost:5000/fuel/trends
+Create multiple fuel entries: POST http://localhost:5000/fuel/bulk
+
+DASHBOARD ROUTES
+Read dashboard overview: GET http://localhost:5000/dashboard/overview
+Read fuel chart data: GET http://localhost:5000/dashboard/fuel-chart
+Read cost analysis: GET http://localhost:5000/dashboard/cost-analysis
+Read recent activities: GET http://localhost:5000/dashboard/recent-activities
+Read efficiency metrics: GET http://localhost:5000/dashboard/efficiency-metrics
+Read monthly comparison: GET http://localhost:5000/dashboard/monthly-comparison
+
+REPORT ROUTES
+Read fuel report: GET http://localhost:5000/reports/fuel
+Read monthly report by year and month: GET http://localhost:5000/reports/monthly/:year/:month
+Read monthly reports list: GET http://localhost:5000/reports/monthly
+Read monthly report by ID: GET http://localhost:5000/reports/monthly/:id
+Generate PDF report: GET http://localhost:5000/reports/pdf
+Read fuel analytics: GET http://localhost:5000/reports/analytics
+Export report CSV: GET http://localhost:5000/reports/export/csv
+Export report Excel: GET http://localhost:5000/reports/export/excel
+
+ADMIN ROUTES
+Read admin dashboard: GET http://localhost:5000/admin/dashboard
+Read all fuel entries (admin): GET http://localhost:5000/admin/fuel-entries
+Read system stats (admin): GET http://localhost:5000/admin/stats
+Create/update fuel prices (admin): POST http://localhost:5000/admin/fuel-prices
+Read fuel prices (admin): GET http://localhost:5000/admin/fuel-prices
+Send admin notification: POST http://localhost:5000/admin/notifications
+Read system logs (admin): GET http://localhost:5000/admin/logs
+Create backup (admin): POST http://localhost:5000/admin/backup
+
+NOTIFICATION ROUTES
+Read all notifications: GET http://localhost:5000/notifications
+Mark notification read: PUT http://localhost:5000/notifications/:id/read
+Delete notification: DELETE http://localhost:5000/notifications/:id
+
+PETROL PRICE ROUTES
+Read petrol prices: GET http://localhost:5000/petrol-prices
+Update petrol price by ID: PUT http://localhost:5000/petrol-prices/:id
+
+SAVINGS ROUTES
+Read savings tips: GET http://localhost:5000/savings/tips
+Read savings report: GET http://localhost:5000/savings/report
+Read savings goals: GET http://localhost:5000/savings/goals
+
+HEALTH ROUTE
+Health check: GET http://localhost:5000/health
