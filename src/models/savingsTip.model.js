@@ -1,1 +1,0 @@
-// Savings tip model
